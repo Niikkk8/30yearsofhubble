@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,30 +8,87 @@
     <title>Hubble Telescope</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <section>
-        <nav>
-            <div class="logo_text">
+    <nav>
+        <div class="logo_text">
             <img src="./assets/nasa_logo.png" class="nasa_logo" alt="NASA Logo">
-            <h1>Hubble Site</h1>
-            </div>
-            <div class="navigation_links">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#journey">Journey</a></li>
-                    <li><a href="#discoveries">Discoveries</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    <main>
+            <h1 class="nav_text">Hubble Site</h1>
+        </div>
+        <div class="navigation_links">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#journey">Journey</a></li>
+                <li><a href="#discoveries">Discoveries</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
         <section id="homepage_description">
             <div class="homepage">
                 <h1 class="homepage_text">30 Years of Exploring Space</h1>
-                <div class="empty_space"></div>
             </div>
+        </section>
+    </header>
+    <main>
+        <section id="about">
+            <h1 class="section_headings">About</h1>
+            <div class="about_description">
+                <div class="about_text">
+                    <p>The Hubble Space Telescope (HST or Hubble) is a space telescope that was launched into low Earth
+                        orbit in 1990 and remains in operation. It is named after astronomer Edwin Hubble and is one of
+                        NASA's Great Observatories. It features a 2.4 m (7 ft 10 in) mirror and five main instruments
+                        that observe in the ultraviolet, visible, and near-infrared regions of the electromagnetic
+                        spectrum. Its orbit outside the distortion of Earth's atmosphere allows it to capture extremely
+                        high-resolution images with substantially lower background light than ground-based telescopes.
+                        Many Hubble observations have led to breakthroughs in astrophysics, such as determining the rate
+                        of expansion of the universe.</p>
+                    <p>Space telescopes were proposed as early as 1923, and the Hubble telescope was funded and built in
+                        the 1970s by the United States space agency NASA with contributions from the European Space
+                        Agency. Hubble is the only telescope designed to be maintained in space by astronauts. It was
+                        launched in 1990, but its main mirror had been ground incorrectly, resulting in spherical
+                        aberration. Five Space Shuttle missions have repaired, upgraded, and replaced systems on the
+                        telescope, including all five of the main instruments. Hubble is the visible light telescope in
+                        NASA's Great Observatories program, with other parts of the spectrum covered by the Compton
+                        Gamma Ray Observatory, Chandra X-ray Observatory, and Spitzer Space Telescope. The James Webb
+                        Space Telescope (JWST) was launched on December 25, 2021, with the Nancy Grace Roman Space
+                        Telescope due to follow in 2027.</p>
+                </div>
+                <div class="about_image-wrapper">
+                    <img src="./assets/hubble_photo.jpeg" class="about_image" alt="">
+                </div>
+            </div>
+            <div class="about_description">
+                <div class="about_image-wrapper">
+                    <img src="./assets/hubble_photo_2.jpeg" class="about_image" alt="">
+                </div>
+                <div class="about_text">
+                    <p>The Space Telescope Science Institute (STScI) is responsible for the scientific operation of the
+                        telescope and the delivery of data products to astronomers. It was established in 1981 after a
+                        power struggle between NASA and the scientific community at large. STScI is responsible for
+                        scheduling observations for the telescope, which is in a low-Earth orbit and is occulted by the
+                        Earth for slightly less than half of each orbit. The solar avoidance angle is about 50°, to keep
+                        sunlight from illuminating any part of the OTA. Earth and Moon avoidance keeps bright light out
+                        of the FGSs, and scattered light from entering the instruments.</p>
+                    <p>If the FGSs are turned off, the Moon and Earth can be observed. There is a continuous viewing
+                        zone (CVZ) within roughly 24° of Hubble's orbital poles, in which targets are not occulted for
+                        long periods. Hubble's orbit is in low Earth orbit at an altitude of 540 kilometers (340 mi) and
+                        an inclination of 28.5°. Observation schedules are typically finalized only a few days in
+                        advance, as a longer lead time would mean there was a chance the target would be unobservable by
+                        the time it was due to be observed. Engineering support for HST is provided by NASA and
+                        contractor personnel at the Goddard Space Flight Center in Greenbelt, Maryland, 48 km (30 mi)
+                        south of the STScI. Hubble's operation is monitored 24 hours per day by four teams of flight
+                        controllers.</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="timeline">
+            <h1 class="section_headings">Timeline</h1>
         </section>
     </main>
 </body>
+
 </html>
