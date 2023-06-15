@@ -6,6 +6,7 @@ font-family: 'Josefin Sans', sans-serif;
 font-family: 'Kanit', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -83,7 +84,7 @@ h1 {
 
 .homepage_text {
     font-family: 'Kanit', sans-serif;
-    font-size: 54px;
+    font-size: 56px;
     font-weight: 600;
     animation: animation 1000ms;
     padding-left: 24px;
@@ -116,6 +117,7 @@ h1 {
     font-weight: 300;
     font-size: 16px;
     margin: 16px 16px 0 16px;
+    line-height: 1.5;
 }
 
 .about_image {
@@ -130,14 +132,40 @@ h1 {
     margin-left: 16px;
 }
 
-p {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    line-height: 1.5;
-}
 
 /*TIMELINE*/
 
 #timeline {
     background-color: #202020;
+}
+
+.timeline_container{
+    width: 20%;
+    height: auto;
+    border: 1px solid white;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline_headings{
+    color: #fefefe;
+    padding-bottom: 8px;
+}
+
+.timeline_text{
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #fefefe;
+    line-height: 1.5;
+    padding: 12px;
+}
+
+.timeline_container--wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
