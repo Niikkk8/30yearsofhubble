@@ -139,9 +139,10 @@ h1 {
     background-color: #202020;
 }
 
-.timeline_container{
-    width: 20%;
-    height: auto;
+.timeline_container {
+    width: 24%;
+    height: 240px;
+    overflow-y: scroll;
     border: 1px solid white;
     margin-left: 8px;
     margin-right: 8px;
@@ -151,21 +152,44 @@ h1 {
     align-items: center;
 }
 
-.timeline_headings{
+.timeline_container::-webkit-scrollbar {
+    width: 4px;
+    color: white;
+}
+
+.timeline_container::-webkit-scrollbar-track {
+    width: 12px;
+    background: #202020;
+}
+
+.timeline_container::-webkit-scrollbar-thumb {
+    background: #fefefe;
+}
+
+.timeline_headings {
     color: #fefefe;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
     padding-bottom: 8px;
 }
 
-.timeline_text{
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
+.timeline_text {
+    font-family: 'Josefin-Sans', sans-serif;
+    font-size: 15px;
     color: #fefefe;
     line-height: 1.5;
     padding: 12px;
 }
 
-.timeline_container--wrapper{
+.timeline_container--wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/*DISCOVERIES*/
+
+#discoveries{
+    background-color: #151515;
 }
