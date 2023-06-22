@@ -25,6 +25,22 @@ font-family: 'Poppins', sans-serif;
     }
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 16px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+
 /*NAVIGATION*/
 
 nav {
@@ -42,7 +58,9 @@ nav {
 }
 
 .nasa_logo {
-    width: 150px;
+    width: 90px;
+    padding-left: 12px;
+    padding-right: 16px;
 }
 
 a {
@@ -140,7 +158,7 @@ h1 {
 }
 
 .timeline_container {
-    width: 24%;
+    width: 32%;
     height: 240px;
     overflow-y: scroll;
     border: 1px solid white;
@@ -190,6 +208,105 @@ h1 {
 
 /*DISCOVERIES*/
 
-#discoveries{
+#discoveries {
     background-color: #151515;
+}
+
+.discoveries_text{
+    color: white;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.discovery{
+    padding-bottom: 24px;
+}
+
+.discovery_image {
+    width: 100%;
+    transition: all 500ms ease;
+}
+
+.discoveries_list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 16px;
+    flex-wrap: wrap;
+}
+
+.discovery_wrapper{
+    width: 350px;
+    height: 350px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+}
+
+.discovery_wrapper::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1c1d25;
+    opacity: 0;
+    transition: opacity 450ms ease;
+    z-index: 2;
+}
+
+.discovery:hover .discovery_wrapper::before{
+    opacity: 0.8;
+}
+
+.discovery:hover .discovery_image{
+    transform: scale(1.07);
+    filter: blur(5px);
+}
+
+.discovery:hover .discovery_description{
+    opacity: 1;
+    transform: translateY(-50%);
+}
+
+.discovery_description{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(100%);
+    max-width: 300px;
+    z-index: 3;
+    opacity: 0;
+    transition: transform 600ms, opacity 300ms;
+}
+
+.discovery_description-title{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+}
+
+.discvoery_description-subtitle{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.discovery_description-para{
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.discovery_description-title,
+.discvoery_description-subtitle,
+.discovery_description-para{
+    color: #fff;
 }
